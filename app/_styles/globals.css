@@ -1,0 +1,214 @@
+:root {
+   /* Primary (Deep Purple) */
+   --bs-primary-50:  #f2e7f8;
+   --bs-primary-100: #e0c6e9;
+   --bs-primary-200: #d0a4db;
+   --bs-primary-300: #c083cd;
+   --bs-primary-400: #9e5bbc;
+   --bs-primary-500: #7f42a7;
+   --bs-primary-600: #6a358b;
+   --bs-primary-700: #542c71;
+   --bs-primary-800: #3f2358;
+   --bs-primary-900: #2a193f;
+   --bs-primary-950: #1c112a;
+ 
+   /* Accent (Soft Green) */
+   --bs-accent-50:  #f1f9f0;
+   --bs-accent-100: #d9e9d2;
+   --bs-accent-200: #b4d6ad;
+   --bs-accent-300: #8ec892;
+   --bs-accent-400: #6ab26d;
+   --bs-accent-500: #499f4a;
+   --bs-accent-600: #3c8640;
+   --bs-accent-700: #2f6c36;
+   --bs-accent-800: #225229;
+   --bs-accent-900: #153c1d;
+   --bs-accent-950: #0e2713;
+ }
+
+ body {
+   margin: 0;
+   padding: 0;
+ }
+
+ .bg-primary-50 {
+   background-color: var(--bs-primary-50) !important;
+ }
+ 
+ .bg-primary-100 {
+   background-color: var(--bs-primary-100) !important;
+ }
+ 
+ .bg-primary-200 {
+   background-color: var(--bs-primary-200) !important;
+ }
+ 
+ .bg-primary-300 {
+   background-color: var(--bs-primary-300) !important;
+ }
+ 
+ .bg-primary-400 {
+   background-color: var(--bs-primary-400) !important;
+ }
+ 
+ .bg-primary-500 {
+   background-color: var(--bs-primary-500) !important;
+   color: white;
+ }
+ 
+ .bg-primary-600 {
+   background-color: var(--bs-primary-600) !important;
+ }
+ 
+ .bg-primary-700 {
+   background-color: var(--bs-primary-700) !important;
+ }
+ 
+ .bg-primary-800 {
+   background-color: var(--bs-primary-800) !important;
+ }
+ 
+ .bg-primary-900 {
+   background-color: var(--bs-primary-900) !important;
+ }
+ 
+ .bg-primary-950 {
+   background-color: var(--bs-primary-950) !important;
+ }
+ 
+ .text-primary-50 {
+   color: var(--bs-primary-50) !important;
+ }
+ 
+ .text-primary-100 {
+   color: var(--bs-primary-100) !important;
+ }
+ 
+ .text-primary-200 {
+   color: var(--bs-primary-200) !important;
+ }
+ 
+ .text-primary-300 {
+   color: var(--bs-primary-300) !important;
+ }
+ 
+ .text-primary-400 {
+   color: var(--bs-primary-400) !important;
+ }
+ 
+ .text-primary-500 {
+   color: var(--bs-primary-500) !important;
+ }
+ 
+ .text-primary-600 {
+   color: var(--bs-primary-600) !important;
+ }
+ 
+ .text-primary-700 {
+   color: var(--bs-primary-700) !important;
+ }
+ 
+ .text-primary-800 {
+   color: var(--bs-primary-800) !important;
+ }
+ 
+ .text-primary-900 {
+   color: var(--bs-primary-900) !important;
+ }
+ 
+ .text-primary-950 {
+   color: var(--bs-primary-950) !important;
+ }
+ 
+ /* Accent color utilities */
+ .bg-accent-50 {
+   background-color: var(--bs-accent-50) !important;
+ }
+ 
+ .bg-accent-100 {
+   background-color: var(--bs-accent-100) !important;
+ }
+ 
+ .bg-accent-200 {
+   background-color: var(--bs-accent-200) !important;
+ }
+ 
+ .bg-accent-300 {
+   background-color: var(--bs-accent-300) !important;
+ }
+ 
+ .bg-accent-400 {
+   background-color: var(--bs-accent-400) !important;
+ }
+ 
+ .bg-accent-500 {
+   background-color: var(--bs-accent-500) !important;
+   color: white;
+ }
+ 
+ .bg-accent-600 {
+   background-color: var(--bs-accent-600) !important;
+ }
+ 
+ .bg-accent-700 {
+   background-color: var(--bs-accent-700) !important;
+ }
+ 
+ .bg-accent-800 {
+   background-color: var(--bs-accent-800) !important;
+ }
+ 
+ .bg-accent-900 {
+   background-color: var(--bs-accent-900) !important;
+ }
+ 
+ .bg-accent-950 {
+   background-color: var(--bs-accent-950) !important;
+ }
+ 
+ .text-accent-50 {
+   color: var(--bs-accent-50) !important;
+ }
+ 
+ .text-accent-100 {
+   color: var(--bs-accent-100) !important;
+ }
+ 
+ .text-accent-200 {
+   color: var(--bs-accent-200) !important;
+ }
+ 
+ .text-accent-300 {
+   color: var(--bs-accent-300) !important;
+ }
+ 
+ .text-accent-400 {
+   color: var(--bs-accent-400) !important;
+ }
+ 
+ .text-accent-500 {
+   color: var(--bs-accent-500) !important;
+ }
+ 
+ .text-accent-600 {
+   color: var(--bs-accent-600) !important;
+ }
+ 
+ .text-accent-700 {
+   color: var(--bs-accent-700) !important;
+ }
+ 
+ .text-accent-800 {
+   color: var(--bs-accent-800) !important;
+ }
+ 
+ .text-accent-900 {
+   color: var(--bs-accent-900) !important;
+ }
+ 
+ .text-accent-950 {
+   color: var(--bs-accent-950) !important;
+ }
+
+
+ 
