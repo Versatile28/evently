@@ -2,6 +2,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@/app/_styles/globals.css';
 // import { Josefin_Sans } from 'next/font/google';
 import Header from '@/app/_components/Header';
+import Spinner from './_components/Spinner';
 // import Spinner from './_components/Spinner';
 
 // const josefin = Josefin_Sans({
@@ -24,15 +25,13 @@ export const metadata = {
 export default function RootLayout({ children }) {
    return (
       <html lang="en">
-         <head>
-         </head>
-         <body className='bg-primary-900'>
+         <head></head>
+         <body className="bg-primary-900">
             <header>
                <Header />
             </header>
             {/* <Spinner /> */}
-            {children}
-            <footer className=' text-accent-50'>Copyright by Evently</footer>
+            <main style={{ maxWidth: '80rem' }}>{children}</main>
          </body>
       </html>
    );

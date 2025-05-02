@@ -1,13 +1,31 @@
-import YourEventCard from '@/app/_components/YourEventCard';
-import { getYourEvents } from '../_lib/data-service';
+"use client"
 
-export default async function YourEventList() {
-   const yourEvents = await getYourEvents();
+import YourEventCard from '@/app/_components/YourEventCard';
+import { deleteYourEvent } from '@/app/_lib/actions';
+
+import { useOptimistic } from 'react';
+
+export default function YourEventList({ yourEvents }) {
+   const [optimisticEvents, optimisticDelete] = useOptimistic(
+      yourEvents,
+      (curEvents, eventId) => {
+         return curEvents.filter((event) => event.id !== eventId);
+      }
+   );
+
+   async function handleDelete(eventId) {
+      optimisticDelete(eventId);
+      await deleteYourEvent(eventId);
+   }
 
    return (
-      <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12 xl:gap-14">
-         {yourEvents.map((event) => (
-            <YourEventCard event={event} key={event.id} />
+      <div>
+         {optimisticEvents.map((event) => (
+            <YourEventCard
+               event={event}
+               onDelete={handleDelete}
+               key={event.id}
+            />
          ))}
       </div>
    );

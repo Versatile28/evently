@@ -1,8 +1,9 @@
 import Link from 'next/link';
 import { PencilSquareIcon } from '@heroicons/react/24/solid';
 import { format, isPast, isToday,formatDistance, parseISO } from 'date-fns';
+import DeleteYourEvent from '@/app/_components/DeleteYourEvent';
 
-function YourEventCard({ event }) {
+function YourEventCard({ event, onDelete }) {
    const {
       id,
       name,
@@ -72,16 +73,16 @@ const formatDistanceFromNow = (dateStr) => {
             </p>
 
             <div className="d-flex gap-3 mt-auto align-items-baseline">
-               <p className="h5 text-accent-50 fw-semibold">Duration: {duration}</p>
-               <p className="h5 text-accent-50 fw-semibold">{event?.location ? `•   Location: ${location}` : ''}</p>
-               <p className="ms-auto small text-secondary">
+               <p className="text-accent-50 fw-normal">Duration: {duration}</p>
+               <p className="text-accent-50 fw-normal">{event?.location ? <span>- &nbsp;&nbsp;&nbsp;Location: {location}</span> : ''}</p>
+               <p className="ms-auto small text-accent-50">
                   {created ? format(created, 'EEE, MMM dd yyyy, p') : ''}
                </p>
             </div>
          </div>
 
          <div
-            className="d-flex flex-column border-start border-primary"
+            className="d-flex flex-column justify-content-center border-start border-primary"
             style={{ width: '100px' }}
          >
             <Link
@@ -90,10 +91,11 @@ const formatDistanceFromNow = (dateStr) => {
             >
                <PencilSquareIcon
                   className="me-2"
-                  style={{ height: '1.25rem', width: '1.25rem' }}
+                  style={{ height: '3.5rem', width: '1.25rem' }}
                />
                <span>Edit</span>
             </Link>
+            <DeleteYourEvent eventId={id} onDelete={onDelete} />
          </div>
       </div>
    );

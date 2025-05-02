@@ -1,15 +1,19 @@
 import { Suspense } from "react";
-import Spinner from "../_components/Spinner";
-import YourEventList from "../_components/YourEventList";
+import Spinner from "@/app/_components/Spinner";
+import YourEventList from "@/app/_components/YourEventList";
+import { getYourEvents } from "@/app/_lib/data-service";
+import { auth } from "@/app/_lib/auth";
 
 export const metadata = {
    title: 'Events',
 };
 
-export default function Page() {
+export default async function Page() {
+   const session = await auth();
+   const yourEvents = await getYourEvents(session.user.userId);
    return (
       <div>
-         <h1 className="text-4xl mb-5 text-accent-400 font-medium px-5 mx-3 mt-5">
+         <h1 className="text-4xl mb-4 text-accent-400 font-medium px-5 mx-3 mt-5">
             Your Events
          </h1>
          <p className="text-primary-50 text-lg mb-5 px-5 mx-3">
@@ -24,7 +28,7 @@ export default function Page() {
             every moment matters.
          </p>
          <Suspense fallback={<Spinner />}>
-            <YourEventList />
+            <YourEventList yourEvents={yourEvents}/>
          </Suspense>
       </div>
    );

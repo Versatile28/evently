@@ -19,8 +19,8 @@ export default function Spinner() {
 
   return (
     <div
-      className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-white bg-opacity-75"
-      style={{ zIndex: 1050 }}
+      className="position-fixed top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center bg-transparent"
+      style={{ zIndex: 1050, height: '30vh' }}
     >
       <div className="spinner-border text-primary" role="status">
         <span className="visually-hidden">Loading...</span>
