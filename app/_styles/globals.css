@@ -24,6 +24,8 @@
    --bs-accent-800: #225229;
    --bs-accent-900: #153c1d;
    --bs-accent-950: #0e2713;
+
+   --rdp-range_middle-background-color: #6ab26d !important;
  }
 
  body {
@@ -209,6 +211,15 @@
  .text-accent-950 {
    color: var(--bs-accent-950) !important;
  }
+
+ .rdp-day_selected {
+   color: var(--bs-accent-500);
+   border-radius: 0.375rem;
+ }
+
+ /* .rdp-range_middle{
+   background-color: var(--bs-accent-400) !important;
+ } */
 
 
  

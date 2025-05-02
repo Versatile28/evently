@@ -3,6 +3,7 @@ import '@/app/_styles/globals.css';
 // import { Josefin_Sans } from 'next/font/google';
 import Header from '@/app/_components/Header';
 import Spinner from './_components/Spinner';
+import { EventProvider } from './_components/EventContext';
 // import Spinner from './_components/Spinner';
 
 // const josefin = Josefin_Sans({
@@ -31,7 +32,11 @@ export default function RootLayout({ children }) {
                <Header />
             </header>
             {/* <Spinner /> */}
-            <main style={{ maxWidth: '80rem' }}>{children}</main>
+            <main style={{ maxWidth: '80rem' }}>                  
+               <EventProvider>
+                  {children}
+               </EventProvider>
+            </main>
          </body>
       </html>
    );

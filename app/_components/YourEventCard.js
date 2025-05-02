@@ -86,7 +86,7 @@ const formatDistanceFromNow = (dateStr) => {
             style={{ width: '100px' }}
          >
             <Link
-               href={`/event/edit/${id}`}
+               href={`/yourevents/edit/${id}`}
                className="text-uppercase text-accent-50 text-decoration-none border-bottom border-primary px-3 py-2 d-flex align-items-center gap-2"
             >
                <PencilSquareIcon

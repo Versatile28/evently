@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import Spinner from "@/app/_components/Spinner";
 import YourEventList from "@/app/_components/YourEventList";
+import AddEvent from "@/app/_components/AddEvent";
 import { getYourEvents } from "@/app/_lib/data-service";
 import { auth } from "@/app/_lib/auth";
 
@@ -27,6 +28,7 @@ export default async function Page() {
             one seamless experience. Welcome to your personal Events hub—where
             every moment matters.
          </p>
+         <AddEvent />
          <Suspense fallback={<Spinner />}>
             <YourEventList yourEvents={yourEvents}/>
          </Suspense>
