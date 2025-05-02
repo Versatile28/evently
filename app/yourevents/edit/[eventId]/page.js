@@ -11,7 +11,7 @@ export default async function Page({ params }) {
    return (
       <div className="container mt-4 mb-4">
          <h2 className="fw-semibold fs-2 text-accent-400 mb-4">
-            Edit Reservation #{eventId}
+            Edit Event #{eventId}
          </h2>
 
          <form action={updateEvent} className="bg-accent-50 p-4 rounded shadow">
@@ -70,7 +70,7 @@ export default async function Page({ params }) {
 
             <div className="d-flex justify-content-end gap-3">
                <SubmitButton pendingLabel="Updating...">
-                  Update reservation
+                  Update Event
                </SubmitButton>
             </div>
          </form>
