@@ -101,7 +101,7 @@ function EventForm({ event, user }) {
                   </p>
                ) : (
                   <SubmitButton pendingLabel="Adding...">
-                     Reserve now
+                     Add now
                   </SubmitButton>
                )}
             </div>

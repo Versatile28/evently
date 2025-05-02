@@ -24,7 +24,7 @@ export async function createEvent(eventData, formData) {
  
    if (error) throw new Error("Event could not be created");
  
-   redirect("/yourevent");
+   redirect("/yourevents");
  }
 
 export async function deleteYourEvent(eventId) {
